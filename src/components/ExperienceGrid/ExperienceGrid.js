@@ -35,23 +35,6 @@ const amenities = [
     accent: '#5A4333',
   },
   {
-    id: 'smoking',
-    icon: (
-      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-        <path d="M8 40H44V48H8V40Z" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
-        <path d="M44 40H52V48H44V40Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-        <path d="M48 40V32C48 28 52 26 52 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-        <path d="M42 40V34C42 30 44 28 44 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
-        {/* Smoke wisps */}
-        <path d="M16 36C14 32 18 28 16 24" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.3"/>
-        <path d="M24 34C22 30 26 26 24 22" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.2"/>
-      </svg>
-    ),
-    label: 'Smoking Allowed',
-    description: 'Designated outdoor spaces to unwind with the mountain air.',
-    accent: '#8B6914',
-  },
-  {
     id: 'security',
     icon: (
       <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
@@ -123,7 +106,7 @@ const AmenityPanel = ({ amenity, index }) => {
       transition={{ duration: 0.9, delay: index * 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative overflow-hidden group"
+      className="relative overflow-hidden group h-full flex flex-col"
       style={{
         background: 'rgba(26,42,29,0.15)',
         border: '1px solid rgba(241,231,216,0.07)',
@@ -166,7 +149,7 @@ const AmenityPanel = ({ amenity, index }) => {
 
       {/* Description */}
       <p
-        className="font-manrope font-light leading-relaxed"
+  className="font-manrope font-light leading-relaxed flex-grow"
         style={{ color: 'rgba(241,231,216,0.4)', fontSize: '0.875rem', lineHeight: 1.8 }}
       >
         {amenity.description}
@@ -218,7 +201,7 @@ const ExperienceGrid = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="font-manrope text-[10px] uppercase tracking-[0.35em] mb-5"
-            style={{ color: 'rgba(66,91,70,0.8)' }}
+            style={{ color: '#A8C5A0' }}
           >
             What This Place Offers
           </motion.p>
@@ -239,7 +222,7 @@ const ExperienceGrid = () => {
               }}
             >
               Curated for the<br />
-              <em style={{ color: 'rgba(66,91,70,0.85)' }}>discerning</em> traveller
+              <em style={{ color: '#A8C5A0' }}>discerning</em> traveller
             </motion.h2>
 
             <motion.p
@@ -261,7 +244,7 @@ const ExperienceGrid = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-fr">
           {amenities.map((amenity, i) => (
             <AmenityPanel key={amenity.id} amenity={amenity} index={i} />
           ))}

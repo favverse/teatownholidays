@@ -128,7 +128,7 @@ const CinematicGallery = () => {
           <motion.p
             initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }}
             className="font-manrope text-[10px] uppercase tracking-[0.35em] mb-5"
-            style={{ color:'rgba(66,91,70,0.8)' }}>
+            style={{ color:'#A8C5A0' }}>
             The Visual Story
           </motion.p>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-5">

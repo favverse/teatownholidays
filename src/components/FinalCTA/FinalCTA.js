@@ -201,7 +201,7 @@ const FinalCTA = () => {
           }}
         >
           Some places are not meant<br />
-          to be <em style={{ color: 'rgba(66,91,70,0.9)' }}>visited.</em>
+          to be <em style={{ color: '#A8C5A0' }}>visited.</em>
         </motion.h2>
 
         <motion.h2

@@ -93,7 +93,7 @@ const SourceBadge = ({ source, refetch }) => {
           padding:'2px 8px', fontSize:'9px', letterSpacing:'0.15em',
           fontFamily:"'Manrope', sans-serif", textTransform:'uppercase',
         }}
-        onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(66,91,70,0.5)'; e.currentTarget.style.color='rgba(66,91,70,0.8)'; }}
+        onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(66,91,70,0.5)'; e.currentTarget.style.color='#A8C5A0'; }}
         onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(241,231,216,0.12)'; e.currentTarget.style.color='rgba(241,231,216,0.3)'; }}
       >
         ↻ refresh
@@ -130,7 +130,7 @@ const Pricing = () => {
         {/* label */}
         <motion.p initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }}
           className="font-manrope text-[10px] uppercase tracking-[0.35em] mb-10"
-          style={{ color:'rgba(66,91,70,0.8)' }}>
+          style={{ color:'#A8C5A0' }}>
           Pricing
         </motion.p>
 
@@ -155,7 +155,7 @@ const Pricing = () => {
               transition={{ duration:1.4, delay:0.6, ease:'easeOut' }}
               className="absolute -bottom-2 left-0 right-0 h-px origin-left"
               style={{
-                background:'linear-gradient(to right, transparent, rgba(66,91,70,0.8) 30%, rgba(139,105,20,0.8) 50%, rgba(66,91,70,0.8) 70%, transparent)',
+                background:'linear-gradient(to right, transparent, #A8C5A0 30%, rgba(139,105,20,0.8) 50%, #A8C5A0 70%, transparent)',
                 boxShadow:'0 0 20px rgba(66,91,70,0.5)',
               }} />
           )}

@@ -198,7 +198,7 @@ const Highlights = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="font-manrope text-[10px] uppercase tracking-[0.35em] mb-5"
-            style={{ color: 'rgba(66,91,70,0.8)' }}
+            style={{ color: '#A8C5A0' }}
           >
             Guest Experience
           </motion.p>
@@ -217,7 +217,7 @@ const Highlights = () => {
             }}
           >
             Why guests{' '}
-            <em style={{ color: 'rgba(66,91,70,0.85)' }}>never forget</em>
+            <em style={{ color: '#A8C5A0' }}>never forget</em>
           </motion.h2>
         </div>
 

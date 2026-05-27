@@ -67,7 +67,7 @@ const StorySection = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           className="font-manrope text-[10px] uppercase mb-20 md:mb-28"
-          style={{ color: 'rgba(66,91,70,0.8)', letterSpacing: '0.35em' }}
+          style={{ color: '#A8C5A0', letterSpacing: '0.35em' }}
         >
           Our Story
         </motion.p>
@@ -157,7 +157,7 @@ const StorySection = () => {
                   {i === 1 ? (
                     <>
                       {line.split('misty hills')[0]}
-                      <em style={{ color: 'rgba(66,91,70,0.9)' }}>misty hills</em>
+                      <em style={{ color: '#A8C5A0' }}>misty hills</em>
                       {line.split('misty hills')[1]}
                     </>
                   ) : line}

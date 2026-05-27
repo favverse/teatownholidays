@@ -191,7 +191,7 @@ const Contact = () => {
         <div className="mb-16 md:mb-20">
           <motion.p initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }}
             className="font-manrope text-[10px] uppercase tracking-[0.35em] mb-5"
-            style={{ color:'rgba(66,91,70,0.8)' }}>
+            style={{ color:'#A8C5A0' }}>
             Find Us
           </motion.p>
           <motion.h2 initial={{ opacity:0, y:30 }} whileInView={{ opacity:1, y:0 }}
