@@ -78,7 +78,7 @@ function App() {
           </main>
           <footer className="relative z-10 py-8 text-center border-t border-white/5">
             <p className="font-manrope text-xs text-white/30 tracking-widest uppercase">
-              © 2024 Tea Town Holidays · Meppadi, Wayanad, Kerala
+              © 2026 Tea Town Holidays · Meppadi, Wayanad, Kerala
             </p>
           </footer>
         </motion.div>
