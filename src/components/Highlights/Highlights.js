@@ -21,7 +21,7 @@ const highlights = [
     title: 'Unbeatable Location',
     body: '100% of guests in the past year gave this location a 5-star rating.',
     detail: 'Meppadi, heart of Wayanad',
-    color: '#425B46',
+    color: '#A8C5A0',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: 32, height: 32 }}>
         <path d="M24 4C17.373 4 12 9.373 12 16C12 25 24 44 24 44C24 44 36 25 36 16C36 9.373 30.627 4 24 4Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
@@ -35,7 +35,7 @@ const highlights = [
     title: 'Mountain View',
     body: 'Soak up the view during your stay. Endless horizons of tea-draped hills.',
     detail: 'Misty peaks every morning',
-    color: '#1A2A1D',
+    color: '#A8C5A0',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: 32, height: 32 }}>
         <path d="M4 36L14 18L20 26L28 10L38 22L44 16V36H4Z" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
@@ -239,7 +239,7 @@ const Highlights = () => {
           <p
             className="font-script"
             style={{
-              color: 'rgba(241,231,216,0.2)',
+              color: 'rgba(241,231,216,0.5)',
               fontSize: 'clamp(1.8rem, 4vw, 3rem)',
             }}
           >

@@ -137,7 +137,7 @@ const StorySection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="font-script mb-6"
-              style={{ color: 'rgba(66,91,70,0.9)', fontSize: '2rem' }}
+              style={{ color: '#A8C5A0', fontSize: '2rem' }}
             >
               Meppadi, Wayanad
             </motion.p>
