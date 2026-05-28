@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import logo from '../../assets/logo.png';
 
 const AIRBNB_URL =
   'https://www.airbnb.co.in/rooms/1605539872474002137?source_impression_id=p3_1779211599_P3g6XHaKF_uDuPSZ';
@@ -34,17 +35,12 @@ const Navbar = () => {
         transition: 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)',
       }}
     >
-      {/* Logo */}
       <a href="/#" style={{ cursor: 'none', textDecoration: 'none' }}>
-        <span className="font-script text-3xl leading-none" style={{ color: '#F1E7D8', opacity: 0.9 }}>
-          Tea Town
-        </span>
-        <span
-          className="block font-manrope text-[9px] tracking-[0.35em] uppercase"
-          style={{ color: '#F1E7D8', opacity: 0.4, marginTop: 2 }}
-        >
-          Holidays · Wayanad
-        </span>
+        <img
+          src={logo}
+          alt="Tea Town Holidays Homestay"
+          style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
+        />
       </a>
 
       {/* Desktop links */}

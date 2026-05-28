@@ -243,7 +243,7 @@ const Highlights = () => {
               fontSize: 'clamp(1.8rem, 4vw, 3rem)',
             }}
           >
-            "The mountains have a way of calling you back."
+            "Your family will be close to everything when you stay at this centrally-located place surrounded by tea plantations and mountains."
           </p>
         </motion.div>
       </div>

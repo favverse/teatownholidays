@@ -3,13 +3,17 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
 import propertyExterior from '../../assets/property-exterior-opt.jpg';
 import propertySurroundings from '../../assets/property-surroundings-opt.jpg';
+import staypic1 from '../../assets/staypic1.jpg';
+import staypic2 from '../../assets/staypic2.jpg';
 
 const AIRBNB_URL =
   'https://www.airbnb.co.in/rooms/1605539872474002137?source_impression_id=p3_1779211599_P3g6XHaKF_uDuPSZ';
 
 const HERO_SCENES = [
-  { type: 'photo', src: propertyExterior,     label: 'The Homestay' },
-  { type: 'photo', src: propertySurroundings, label: 'The Surroundings' },
+  { type: 'photo', src: staypic1,            label: 'The Homestay' },
+  { type: 'photo', src: staypic2,            label: 'The Surroundings' },
+  { type: 'photo', src: propertyExterior,    label: 'The Property' },
+  { type: 'photo', src: propertySurroundings,label: 'The Gardens' },
 ];
 
 const MagneticButton = ({ children, href }) => {
