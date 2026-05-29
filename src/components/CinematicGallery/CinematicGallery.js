@@ -176,7 +176,7 @@ const CinematicGallery = () => {
           initial={{ opacity:0 }} whileInView={{ opacity:1 }}
           viewport={{ once:true }} transition={{ duration:1, delay:0.4 }}
           className="flex items-center gap-4 mt-8">
-          <span className="font-bodoni" style={{ color:'rgba(241,231,216,0.2)', fontSize:'3rem' }}>2</span>
+          <span className="font-bodoni" style={{ color:'rgba(255, 255, 255, 1)', fontSize:'3rem' }}>2</span>
           <div>
             <p className="font-manrope text-[10px] uppercase tracking-[0.3em]"
                style={{ color:'rgba(241,231,216,0.25)' }}>Photos from the property</p>

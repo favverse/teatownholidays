@@ -127,7 +127,7 @@ const ContactCard = ({ method, index }) => {
         {method.value}
       </p>
       <span className="font-manrope text-xs uppercase tracking-[0.18em] transition-colors duration-300"
-            style={{ color: hovered ? method.color : 'rgba(241,231,216,0.2)' }}>
+            style={{ color: hovered ? method.color : 'rgba(255, 255, 255, 1)' }}>
         {method.cta}
       </span>
 
@@ -423,7 +423,7 @@ const Contact = () => {
 
                 {/* helper note */}
                 <p className="font-manrope text-[10px] leading-relaxed"
-                   style={{ color:'rgba(241,231,216,0.2)', letterSpacing:'0.04em' }}>
+                   style={{ color:'rgba(255, 255, 255, 1)', letterSpacing:'0.04em' }}>
                   Clicking either button opens your email / WhatsApp app with your message pre-filled.
                   Or book instantly via Airbnb for same-day confirmation.
                 </p>

@@ -202,7 +202,7 @@ const Pricing = () => {
         <motion.p initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }}
           transition={{ delay:1 }}
           className="font-manrope text-xs mt-8"
-          style={{ color:'rgba(241,231,216,0.2)', letterSpacing:'0.1em' }}>
+          style={{ color:'rgba(255, 255, 255, 1)', letterSpacing:'0.1em' }}>
           Secure booking via Airbnb · Instant confirmation
         </motion.p>
       </div>
