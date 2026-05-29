@@ -78,12 +78,14 @@ const StorySection = () => {
             <motion.div style={{ y: imgY }} className="relative">
               <div className="relative overflow-hidden" style={{ paddingBottom: '130%' }}>
                 {/* Real property photo */}
-                <img
-                  src={propertyExterior}
-                  alt="Tea Town Holidays exterior"
-                  className="absolute inset-0 w-full h-full object-cover"
-                  style={{ filter: 'brightness(0.78) saturate(0.85)' }}
-                />
+            <img
+            src={propertyExterior}
+            alt="Tea Town Holidays exterior"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+            style={{ filter: 'brightness(0.78) saturate(0.85)', willChange: 'transform' }}
+/>
                 {/* Cinematic colour grade */}
                 <div
                   className="absolute inset-0"

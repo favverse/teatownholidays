@@ -77,13 +77,15 @@ const Hero = () => {
           animate={{ opacity: i === sceneIndex ? 1 : 0 }}
           transition={{ duration: 2.2, ease:'easeInOut' }}>
           <img src={scene.src} alt={scene.label}
-               className="w-full h-full object-cover"
-               style={{
-                 /* ← opacity reduced: was 0.55, now 0.32 */
-                 filter: 'brightness(0.32) saturate(0.7)',
-                 transform: i === sceneIndex ? 'scale(1.05)' : 'scale(1)',
-                 transition: 'transform 6s ease-out',
-               }} />
+     className="w-full h-full object-cover"
+     loading="eager"
+     decoding="async"
+     style={{
+       filter: 'brightness(0.32) saturate(0.7)',
+       transform: i === sceneIndex ? 'scale(1.05)' : 'scale(1)',
+       transition: 'transform 6s ease-out',
+       willChange: 'transform',
+     }} />
         </motion.div>
       ))}
 

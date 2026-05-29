@@ -10,6 +10,11 @@
   user-select: none;
 }
 
+img {
+  image-rendering: auto;
+  backface-visibility: hidden;
+}
+
 :root {
   --forest: #1A2A1D;
   --tea: #425B46;

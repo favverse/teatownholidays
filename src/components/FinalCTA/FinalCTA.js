@@ -120,11 +120,13 @@ const FinalCTA = () => {
       {/* Background — real surroundings photo */}
       <motion.div style={{ scale: bgScale }} className="absolute inset-0">
         <img
-          src={propertySurroundings}
-          alt="Tea Town Holidays surroundings"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: 'brightness(0.4) saturate(0.6)' }}
-        />
+        src={propertySurroundings}
+        alt="Tea Town Holidays surroundings"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+        decoding="async"
+        style={{ filter: 'brightness(0.4) saturate(0.6)', willChange: 'transform' }}
+      />
         {/* Green grade */}
         <div
           className="absolute inset-0"
@@ -262,7 +264,7 @@ const FinalCTA = () => {
           className="font-manrope text-xs mt-3"
           style={{ color: 'rgba(241,231,216,0.25)', letterSpacing: '0.1em' }}
         >
-          Rated 5 stars by guests · Airbnb Superhost
+          Rated 5 stars by guests · Airbnb Guest Favourite
         </motion.p>
       </div>
 
